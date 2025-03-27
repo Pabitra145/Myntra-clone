@@ -9,13 +9,13 @@ import Shop from './components/Shop.jsx'
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/Myntra-clone",
       element: <App/>,
       children: [
-        {path: "/", element:<Shop/>},
+        {path: "/Myntra-clone", element:<Shop/>},
 
 
-        {path:"/bag", element:<Bag/>}
+        {path:"/Myntra-clone/bag", element:<Bag/>}
       ]
     }
   ])
