@@ -4,24 +4,23 @@ import {RouterProvider , createBrowserRouter} from "react-router-dom"
 import './index.css'
 import App from './App.jsx'
 import Bag from './components/Bag.jsx'
-import Shop from './components/shop.jsx'
+import Shop from './components/Shop.jsx'
 
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/Myntra-clone",
       element: <App/>,
       children: [
+        {path: "/Myntra-clone", element:<Shop/>},
 
 
-        {path: "/", element:<Shop/>},
-        {path:"/bag", element:<Bag/>}
+        {path:"/Myntra-clone/bag", element:<Bag/>}
       ]
     }
   ])
   createRoot(document.getElementById('root')).render(
   <StrictMode>
-
     <RouterProvider router = {router} />
   </StrictMode>
 )
